@@ -1,0 +1,49 @@
+{
+  "name": "vd2hc",
+  "version": "0.0.0",
+  "source": "src/index.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.mjs"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/node": "^20.11.5",
+    "rollup": "^4.9.6",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@hypercerts-org/sdk": "^1.4.2-alpha.0",
+    "rollup-plugin-esbuild": "^6.1.1"
+  }
+}
