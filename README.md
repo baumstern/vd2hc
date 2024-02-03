@@ -6,7 +6,7 @@ The `vd2hc` library provides functionality to fetch Impact Reports from VoiceDec
 
 To install the library, run the following command:
 ```
-npm install vd2hc
+npm install vd2hc@0.0.1
 ```
 
 ## Usage
