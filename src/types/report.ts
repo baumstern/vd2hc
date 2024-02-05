@@ -14,6 +14,7 @@ export interface Report {
   contributor: string | null;
 
   //non hypercert propoerties
+  // id of cms
   id: string;
     status: string;
     date_created: string | null;
@@ -27,6 +28,7 @@ export interface Report {
     byline: string | null;
     total_cost: string | null;
     
+    hypercert_id: string | null;
   }
   
 export  interface ApiResponse {

@@ -9,7 +9,7 @@
 
 To install the library, run the following command:
 ```
-npm install vd2hc@0.0.3
+npm install vd2hc@0.0.4
 ```
 
 ## Usage
