@@ -40,3 +40,16 @@ const hypercerts = response.data.map(report => {
   return metadata;
 });
 ```
+
+## Build
+
+```
+pnpm install
+pnpm build
+```
+
+## Test
+
+```
+pnpm test
+```
