@@ -29,7 +29,8 @@ const reports = [
     contributor: "Mobile Vaani, Reena Parveen",
     byline: "Devansh",
     total_cost: "1000",
-    impact_scope: null
+    impact_scope: null,
+    hypercert_id: null
   },
   {
     id: "dde50c4e-59b2-4307-863c-374dd0d81afd",
@@ -53,7 +54,8 @@ const reports = [
     contributor: null,
     byline: "Devansh",
     total_cost: null,
-    impact_scope: null
+    impact_scope: null,
+    hypercert_id: null
   }
 ];
 
