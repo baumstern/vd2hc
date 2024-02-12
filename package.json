@@ -24,6 +24,7 @@
   "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
