@@ -4,7 +4,7 @@
 
 `vd2hc` is designed to interact with VoiceDeck's CMS and transform them into `HypercertMetadata`. It includes two primary functions:
 
-- `fetchReports`: Retrieves all reports stored in VoiceDeck CMS.
+- `fetchReports`: Retrieves all reports from VoiceDeck CMS that have a `published` status and where the `hypercert_id` field is null.
 - `transformToHypercertData`: Takes a `Report` object, as defined in `src/types/report.ts`, and converts it into a [`HypercertMetadata`](https://hypercerts.org/docs/developer/api/sdk/interfaces/HypercertMetadata) object compatible with the Hypercerts.
 
 ## Prerequisites
@@ -15,7 +15,7 @@ Before installing `vd2hc`, make sure you are using Node.js version 18 or higher.
 
 To install the library, run the following command:
 ```
-npm install vd2hc@0.0.5
+npm install vd2hc@0.0.6
 ```
 
 ## Usage

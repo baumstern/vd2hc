@@ -15,6 +15,9 @@ export async function fetchReports(
 					status: {
 						_eq: 'published',
 					},
+					hypercert_id: {
+						_null: true,
+					}
 				},
 			})
 		);
