@@ -1,16 +1,28 @@
-import { ApiResponse } from "../types/report";
+import { createDirectus, rest, readItems } from '@directus/sdk';
 
+import { ApiResponse, Report } from "../types/report";
+
+// "status": "published",
 export async function fetchReports(
 	endpoint: string,
 ): Promise<ApiResponse | undefined> {
 	try {
-		const response = await fetch(endpoint);
-		if (!response.ok) {
-			throw new Error(`HTTP error! status: ${response.status}`);
-		}
-		const data: ApiResponse = await response.json();
-		return data;
+		const client = createDirectus(endpoint).with(rest());
+
+		const response = await client.request(
+			readItems('reports', {
+				filter: {
+					status: {
+						_eq: 'published',
+					},
+				},
+			})
+		);
+
+		return {
+			data: response as Report[],
+		};
 	} catch (error) {
-		console.error("Fetch error:", error);
+		console.error(`failed to fetch reports from CMS: ${error}`);
 	}
 }

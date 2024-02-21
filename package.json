@@ -1,6 +1,6 @@
 {
   "name": "vd2hc",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "source": "src/index.ts",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
@@ -44,6 +44,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@directus/sdk": "^15.0.1",
     "@hypercerts-org/sdk": "^1.4.2-alpha.0",
     "rollup-plugin-esbuild": "^6.1.1"
   }

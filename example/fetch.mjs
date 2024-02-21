@@ -1,7 +1,7 @@
 import { fetchReports, transformToHypercertData } from "vd2hc";
 import { validateMetaData, validateClaimData } from "@hypercerts-org/sdk";
 
-const VD_REPORTS_ENDPOINT = "https://directus.vd-dev.org/items/reports";
+const VD_REPORTS_ENDPOINT = "https://directus.vd-dev.org/";
 
 const response = await fetchReports(VD_REPORTS_ENDPOINT);
 

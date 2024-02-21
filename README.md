@@ -15,7 +15,7 @@ Before installing `vd2hc`, make sure you are using Node.js version 18 or higher.
 
 To install the library, run the following command:
 ```
-npm install vd2hc@0.0.4
+npm install vd2hc@0.0.5
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ To use the library, you need to import the `fetchReports` and `transformToHyperc
 import { fetchReports, transformToHypercertData } from 'vd2hc';
 import { validateMetaData, validateClaimData } from "@hypercerts-org/sdk";
 
-const VD_REPORTS_ENDPOINT = 'https://directus.vd-dev.org/items/reports';
+const VD_REPORTS_ENDPOINT = 'https://directus.vd-dev.org/';
 
 const response = await fetchReports(VD_REPORTS_ENDPOINT);
 

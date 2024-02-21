@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@directus/sdk':
+    specifier: ^15.0.1
+    version: 15.0.1
   '@hypercerts-org/sdk':
     specifier: ^1.4.2-alpha.0
     version: 1.4.2-alpha.0(react@18.2.0)(ts-node@10.9.1)(typescript@5.3.3)
@@ -217,6 +220,17 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+
+  /@directus/sdk@15.0.1:
+    resolution: {integrity: sha512-NuP+S2SZ23gmcSNnHiX7LxlUxkdIjX0mV3kFKqTdU07epj4OJNHk7ZXfSV2y67fnQjFrb7apTHe2LdWnU8Y6vQ==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@directus/system-data': 1.0.0
+    dev: false
+
+  /@directus/system-data@1.0.0:
+    resolution: {integrity: sha512-AKzYkLg39phx9AysQhcf7AmIGq1D/PIkor5B8Y5NB8R+jq+jkH1PBtg/l5Ev4hfsidpNBi5DmpuFy/xmQEYhHQ==}
+    dev: false
 
   /@esbuild/aix-ppc64@0.19.12:
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
