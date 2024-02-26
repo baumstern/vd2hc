@@ -1,13 +1,14 @@
-import { createDirectus, rest, readItems } from '@directus/sdk';
+import { createDirectus, rest, readItems, staticToken } from '@directus/sdk';
 
 import { ApiResponse, Report } from "../types/report";
 
 // "status": "published",
 export async function fetchReports(
 	endpoint: string,
+	accessToken?: string
 ): Promise<ApiResponse | undefined> {
 	try {
-		const client = createDirectus(endpoint).with(rest());
+		const client = createDirectus(endpoint).with(staticToken(accessToken as string)).with(rest());
 
 		const response = await client.request(
 			readItems('reports', {

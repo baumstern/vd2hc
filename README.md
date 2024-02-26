@@ -15,7 +15,7 @@ Before installing `vd2hc`, make sure you are using Node.js version 18 or higher.
 
 To install the library, run the following command:
 ```
-npm install vd2hc@0.0.6
+npm install vd2hc@0.0.7
 ```
 
 ## Usage
