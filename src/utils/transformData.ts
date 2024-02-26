@@ -2,7 +2,7 @@ import { Report } from "../types/report";
 import { HypercertMetadata } from "@hypercerts-org/sdk";
 import { validateMetaData, validateClaimData } from "@hypercerts-org/sdk";
 
-const CMS_URL = "https://directus.vd-dev.org";
+const CMS_URL = "https://directus.voicedeck.org";
 
 export function transformToHypercertData(report: Report): HypercertMetadata {
 	const imageUrl = report.image
